@@ -16,9 +16,6 @@ COPY . /home/data
 # Copy result.txt to /home/output
 RUN touch /home/output/result.txt
 
-# Copy over the python script
-COPY start.py /home/data/
-
 # Give execute permissions to script and write permissions to file
 RUN chmod +x /home/data/start.py
 RUN chmod +w /home/output/result.txt
